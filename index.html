@@ -867,8 +867,8 @@ h2 {
   <!-- ═══ GANTT ═══ -->
   <div class="section" style="padding-top:36px;padding-bottom:72px">
     <div class="section-label reveal">Timeline</div>
-    <h2 class="reveal">4 weeks. Parallel where possible.</h2>
-    <p class="section-sub reveal">Brevo and Adjust run in parallel during weeks 2–3 to keep things tight.</p>
+    <h2 class="reveal">3 weeks. Parallel where possible.</h2>
+    <p class="section-sub reveal">Brevo and Adjust run in parallel during week 2. Integration is the real bottleneck — that gets the most runway.</p>
 
     <div class="gantt-card reveal">
       <div class="gantt-inner">
@@ -876,15 +876,20 @@ h2 {
           <div class="gantt-week">Week 1</div>
           <div class="gantt-week">Week 2</div>
           <div class="gantt-week">Week 3</div>
-          <div class="gantt-week">Week 4</div>
         </div>
 
-        <div class="gantt-row"><div class="gantt-label">Discovery</div><div class="gantt-track"><div class="gantt-gridline" style="left:25%"></div><div class="gantt-gridline" style="left:50%"></div><div class="gantt-gridline" style="left:75%"></div><div class="gantt-bar" style="left:0;width:25%;background:#E53935"></div></div></div>
-        <div class="gantt-row"><div class="gantt-label">Pipedrive</div><div class="gantt-track"><div class="gantt-gridline" style="left:25%"></div><div class="gantt-gridline" style="left:50%"></div><div class="gantt-gridline" style="left:75%"></div><div class="gantt-bar" style="left:12.5%;width:37.5%;background:#D32F2F"></div></div></div>
-        <div class="gantt-row"><div class="gantt-label">Brevo</div><div class="gantt-track"><div class="gantt-gridline" style="left:25%"></div><div class="gantt-gridline" style="left:50%"></div><div class="gantt-gridline" style="left:75%"></div><div class="gantt-bar" style="left:37.5%;width:37.5%;background:#C62828"></div></div></div>
-        <div class="gantt-row"><div class="gantt-label">Adjust</div><div class="gantt-track"><div class="gantt-gridline" style="left:25%"></div><div class="gantt-gridline" style="left:50%"></div><div class="gantt-gridline" style="left:75%"></div><div class="gantt-bar" style="left:37.5%;width:32.5%;background:#B71C1C"></div></div></div>
-        <div class="gantt-row"><div class="gantt-label">Integration</div><div class="gantt-track"><div class="gantt-gridline" style="left:25%"></div><div class="gantt-gridline" style="left:50%"></div><div class="gantt-gridline" style="left:75%"></div><div class="gantt-bar" style="left:62.5%;width:32.5%;background:#880E4F"></div></div></div>
-        <div class="gantt-row"><div class="gantt-label">QA & Handoff</div><div class="gantt-track"><div class="gantt-gridline" style="left:25%"></div><div class="gantt-gridline" style="left:50%"></div><div class="gantt-gridline" style="left:75%"></div><div class="gantt-bar" style="left:80%;width:20%;background:#4A148C"></div></div></div>
+        <!-- Discovery: first half of Week 1 -->
+        <div class="gantt-row"><div class="gantt-label">Discovery</div><div class="gantt-track"><div class="gantt-gridline" style="left:33.3%"></div><div class="gantt-gridline" style="left:66.6%"></div><div class="gantt-bar" style="left:0;width:16.6%;background:#E53935"></div></div></div>
+        <!-- Pipedrive: Week 1 -->
+        <div class="gantt-row"><div class="gantt-label">Pipedrive</div><div class="gantt-track"><div class="gantt-gridline" style="left:33.3%"></div><div class="gantt-gridline" style="left:66.6%"></div><div class="gantt-bar" style="left:10%;width:28%;background:#D32F2F"></div></div></div>
+        <!-- Brevo: Week 1 end – Week 2 -->
+        <div class="gantt-row"><div class="gantt-label">Brevo</div><div class="gantt-track"><div class="gantt-gridline" style="left:33.3%"></div><div class="gantt-gridline" style="left:66.6%"></div><div class="gantt-bar" style="left:25%;width:40%;background:#C62828"></div></div></div>
+        <!-- Adjust: Week 2 (parallel with Brevo) -->
+        <div class="gantt-row"><div class="gantt-label">Adjust</div><div class="gantt-track"><div class="gantt-gridline" style="left:33.3%"></div><div class="gantt-gridline" style="left:66.6%"></div><div class="gantt-bar" style="left:33.3%;width:22%;background:#B71C1C"></div></div></div>
+        <!-- Integration: Week 2 end – Week 3 -->
+        <div class="gantt-row"><div class="gantt-label">Integration</div><div class="gantt-track"><div class="gantt-gridline" style="left:33.3%"></div><div class="gantt-gridline" style="left:66.6%"></div><div class="gantt-bar" style="left:50%;width:38%;background:#880E4F"></div></div></div>
+        <!-- QA & Handoff: end of Week 3 -->
+        <div class="gantt-row"><div class="gantt-label">QA & Handoff</div><div class="gantt-track"><div class="gantt-gridline" style="left:33.3%"></div><div class="gantt-gridline" style="left:66.6%"></div><div class="gantt-bar" style="left:78%;width:22%;background:#4A148C"></div></div></div>
       </div>
     </div>
   </div>
@@ -932,8 +937,8 @@ h2 {
     <div class="phase-card reveal" onclick="togglePhase(this)">
       <div class="phase-header">
         <div class="phase-num">🔍</div>
-        <div class="phase-info"><div class="phase-title">Discovery & Mapping</div><div class="phase-week">Week 1</div></div>
-        <div class="phase-hours">8–10 hrs</div>
+        <div class="phase-info"><div class="phase-title">Discovery & Mapping</div><div class="phase-week">Week 1 · first 2–3 days</div></div>
+        <div class="phase-hours">4–6 hrs</div>
         <div class="phase-chevron">▾</div>
       </div>
       <div class="phase-body"><div class="phase-content"><div class="phase-divider"></div>
@@ -951,8 +956,8 @@ h2 {
     <div class="phase-card reveal" onclick="togglePhase(this)">
       <div class="phase-header">
         <div class="phase-num">⚡</div>
-        <div class="phase-info"><div class="phase-title">Pipedrive CRM</div><div class="phase-week">Week 1–2</div></div>
-        <div class="phase-hours">14–18 hrs</div>
+        <div class="phase-info"><div class="phase-title">Pipedrive CRM</div><div class="phase-week">Week 1</div></div>
+        <div class="phase-hours">8–12 hrs</div>
         <div class="phase-chevron">▾</div>
       </div>
       <div class="phase-body"><div class="phase-content"><div class="phase-divider"></div>
@@ -970,13 +975,13 @@ h2 {
     <div class="phase-card reveal" onclick="togglePhase(this)">
       <div class="phase-header">
         <div class="phase-num">✉️</div>
-        <div class="phase-info"><div class="phase-title">Brevo — 11 Workflows</div><div class="phase-week">Week 2–3</div></div>
-        <div class="phase-hours">22–28 hrs</div>
+        <div class="phase-info"><div class="phase-title">Brevo — 11 Workflows</div><div class="phase-week">Week 1–2</div></div>
+        <div class="phase-hours">14–18 hrs</div>
         <div class="phase-chevron">▾</div>
       </div>
       <div class="phase-body"><div class="phase-content"><div class="phase-divider"></div>
         <div class="phase-item"><div class="phase-bullet"></div><div class="phase-item-text">Set up contact segmentation: app users vs business leads — same system, clearly separated with clean tags</div></div>
-        <div class="phase-item"><div class="phase-bullet"></div><div class="phase-item-text">Design branded email templates matching LYVV's Dine/Stay/Experience visual identity</div></div>
+        <div class="phase-item"><div class="phase-bullet"></div><div class="phase-item-text">Design branded email templates matching LYVV's Dine/Stay/Experience visual identity — one master template, then variations</div></div>
         <div class="phase-item"><div class="phase-bullet"></div><div class="phase-item-text">Build all 11 workflows detailed above — each with proper triggers, delays, conditions, and send logic</div></div>
         <div class="phase-item"><div class="phase-bullet"></div><div class="phase-item-text">Connect Brevo to Pipedrive: email engagement (opens/clicks) updates deal records in real-time</div></div>
         <div class="phase-item"><div class="phase-bullet"></div><div class="phase-item-text">Tagging system: engaged/inactive, reviewed/not-reviewed, user-type, source-channel, milestone-level — no overlap</div></div>
@@ -989,18 +994,17 @@ h2 {
     <div class="phase-card reveal" onclick="togglePhase(this)">
       <div class="phase-header">
         <div class="phase-num">📊</div>
-        <div class="phase-info"><div class="phase-title">Adjust Mobile Tracking</div><div class="phase-week">Week 2–3</div></div>
-        <div class="phase-hours">8–12 hrs</div>
+        <div class="phase-info"><div class="phase-title">Adjust Mobile Tracking</div><div class="phase-week">Week 2</div></div>
+        <div class="phase-hours">4–6 hrs</div>
         <div class="phase-chevron">▾</div>
       </div>
       <div class="phase-body"><div class="phase-content"><div class="phase-divider"></div>
         <div class="phase-item"><div class="phase-bullet"></div><div class="phase-item-text">Define complete event taxonomy: app_install, sign_up, first_search, view_place, add_review, share, book_experience, complete_profile, invite_friend</div></div>
         <div class="phase-item"><div class="phase-bullet"></div><div class="phase-item-text">For each event: document event name, trigger condition, parameters, expected payload — developer-ready spec</div></div>
         <div class="phase-item"><div class="phase-bullet"></div><div class="phase-item-text">Attribution mapping: which channel (QR from banner, direct referral, organic) drove each install</div></div>
-        <div class="phase-item"><div class="phase-bullet"></div><div class="phase-item-text">Configure postback URLs to push data into Pipedrive and Brevo</div></div>
+        <div class="phase-item"><div class="phase-bullet"></div><div class="phase-item-text">Configure Adjust dashboard and postback URLs — your dev team handles the SDK implementation</div></div>
         <div class="phase-item"><div class="phase-bullet"></div><div class="phase-item-text">Pre-configure Meta SDK architecture for future paid acquisition</div></div>
-        <div class="phase-item"><div class="phase-bullet"></div><div class="phase-item-text">QA all events in Adjust testing console before go-live</div></div>
-        <div class="phase-deliverable">📦 <span><strong>Deliverable:</strong> Developer-ready Event Spec + Adjust dashboard + postback integrations</span></div>
+        <div class="phase-deliverable">📦 <span><strong>Deliverable:</strong> Developer-ready Event Spec + Adjust dashboard + postback config</span></div>
       </div></div>
     </div>
 
@@ -1008,7 +1012,7 @@ h2 {
     <div class="phase-card reveal" onclick="togglePhase(this)">
       <div class="phase-header">
         <div class="phase-num">🔗</div>
-        <div class="phase-info"><div class="phase-title">Integration & Data Flow</div><div class="phase-week">Week 3–4</div></div>
+        <div class="phase-info"><div class="phase-title">Integration & Data Flow</div><div class="phase-week">Week 2–3</div></div>
         <div class="phase-hours">12–16 hrs</div>
         <div class="phase-chevron">▾</div>
       </div>
@@ -1029,18 +1033,17 @@ h2 {
     <div class="phase-card reveal" onclick="togglePhase(this)">
       <div class="phase-header">
         <div class="phase-num">✅</div>
-        <div class="phase-info"><div class="phase-title">QA, Training & Handoff</div><div class="phase-week">Week 4</div></div>
-        <div class="phase-hours">8–10 hrs</div>
+        <div class="phase-info"><div class="phase-title">QA, Training & Handoff</div><div class="phase-week">Week 3</div></div>
+        <div class="phase-hours">5–7 hrs</div>
         <div class="phase-chevron">▾</div>
       </div>
       <div class="phase-body"><div class="phase-content"><div class="phase-divider"></div>
         <div class="phase-item"><div class="phase-bullet"></div><div class="phase-item-text">End-to-end test: simulate full lifecycle from lead capture to automated follow-up</div></div>
         <div class="phase-item"><div class="phase-bullet"></div><div class="phase-item-text">Validate every Brevo automation with real test scenarios</div></div>
         <div class="phase-item"><div class="phase-bullet"></div><div class="phase-item-text">QA Adjust event tracking with your dev team in test environment</div></div>
-        <div class="phase-item"><div class="phase-bullet"></div><div class="phase-item-text">Train acquisition team: entering leads, tracking pipeline, reading numbers</div></div>
-        <div class="phase-item"><div class="phase-bullet"></div><div class="phase-item-text">Train sales team: working deals, activity logging, using the dashboard</div></div>
+        <div class="phase-item"><div class="phase-bullet"></div><div class="phase-item-text">One training session for both teams: entering leads, working deals, reading the dashboard</div></div>
         <div class="phase-item"><div class="phase-bullet"></div><div class="phase-item-text">Complete documentation: architecture, automation logic, event specs, troubleshooting</div></div>
-        <div class="phase-deliverable">📦 <span><strong>Deliverable:</strong> Trained teams + full documentation + 30-day post-launch support</span></div>
+        <div class="phase-deliverable">📦 <span><strong>Deliverable:</strong> Trained teams + full documentation + 14-day post-launch support</span></div>
       </div></div>
     </div>
   </div>
@@ -1051,20 +1054,21 @@ h2 {
       <div class="total-top">
         <div>
           <div class="section-label">Total Investment</div>
-          <div class="total-number">72–94<span class="total-unit">hours</span></div>
+          <div class="total-number">47–65<span class="total-unit">hours</span></div>
         </div>
         <div style="text-align:right">
           <div class="total-timeline-label">Timeline</div>
-          <div class="total-timeline">4 weeks</div>
+          <div class="total-timeline">3 weeks</div>
         </div>
       </div>
+      <!-- Bar proportions based on midpoints: 5/10/16/5/14/6 = 56 total -->
       <div class="bar-track">
-        <div style="width:10.8%;background:#E53935"></div>
-        <div style="width:18.9%;background:#D32F2F"></div>
-        <div style="width:29.7%;background:#C62828"></div>
-        <div style="width:10.8%;background:#B71C1C"></div>
-        <div style="width:16.2%;background:#880E4F"></div>
-        <div style="width:10.8%;background:#4A148C"></div>
+        <div style="width:8.9%;background:#E53935"></div>  <!-- Discovery 5/56 -->
+        <div style="width:17.9%;background:#D32F2F"></div> <!-- Pipedrive 10/56 -->
+        <div style="width:28.6%;background:#C62828"></div>  <!-- Brevo 16/56 -->
+        <div style="width:8.9%;background:#B71C1C"></div>   <!-- Adjust 5/56 -->
+        <div style="width:25%;background:#880E4F"></div>     <!-- Integration 14/56 -->
+        <div style="width:10.7%;background:#4A148C"></div>   <!-- QA 6/56 -->
       </div>
       <div class="bar-legend">
         <div class="bar-legend-item"><div class="bar-legend-dot" style="background:#E53935"></div><span class="bar-legend-label">Discovery</span></div>
@@ -1075,7 +1079,7 @@ h2 {
         <div class="bar-legend-item"><div class="bar-legend-dot" style="background:#4A148C"></div><span class="bar-legend-label">QA</span></div>
       </div>
       <div class="total-divider"></div>
-      <div class="total-note"><strong>Billing:</strong> Hourly, tracked per phase, shared weekly. You pay only actual hours worked. If something is simpler than expected, the hours come down. The range accounts for API complexity and integration depth we'll uncover during discovery.</div>
+      <div class="total-note"><strong>Billing:</strong> Hourly, tracked per phase, shared weekly. You pay only actual hours worked. If something is simpler than expected, the hours come down. The range accounts for API complexity we'll uncover during discovery — the integration phase is where the real unknowns live.</div>
     </div>
   </div>
 
@@ -1089,7 +1093,7 @@ h2 {
       <div class="price-card featured reveal">
         <div class="price-tag">ONE-TIME</div>
         <div class="price-type">Complete Setup & Build</div>
-        <div class="price-amount">72–94 hrs</div>
+        <div class="price-amount">47–65 hrs</div>
         <div class="price-period">at your agreed hourly rate × actual hours</div>
         <div class="price-divider"></div>
         <ul class="price-features">
@@ -1098,14 +1102,14 @@ h2 {
           <li><span class="price-check">✓</span> Adjust event architecture + developer-ready spec</li>
           <li><span class="price-check">✓</span> All integrations: App ↔ CRM ↔ Email ↔ Tracking</li>
           <li><span class="price-check">✓</span> Team training + complete documentation</li>
-          <li><span class="price-check">✓</span> 30-day post-launch support included</li>
+          <li><span class="price-check">✓</span> 14-day post-launch support included</li>
         </ul>
       </div>
 
       <div class="price-card reveal">
         <div class="price-type" style="margin-top:24px">Monthly Maintenance</div>
         <div class="price-amount">$179</div>
-        <div class="price-period">per month, starting after 30-day support window</div>
+        <div class="price-period">per month, starting after 14-day support window</div>
         <div class="price-divider"></div>
         <ul class="price-features">
           <li><span class="price-check">✓</span> Monitor all integrations and fix any connection breaks</li>
@@ -1201,7 +1205,6 @@ function drawCircle(x, y, size, opacity, color) {
   ctx.arc(x, y, size, 0, Math.PI * 2);
   ctx.fillStyle = `rgba(${color[0]},${color[1]},${color[2]},${opacity})`;
   ctx.fill();
-  // glow
   ctx.beginPath();
   ctx.arc(x, y, size * 1.8, 0, Math.PI * 2);
   ctx.fillStyle = `rgba(${color[0]},${color[1]},${color[2]},${opacity * 0.15})`;
@@ -1214,7 +1217,6 @@ function drawRect(x, y, size, opacity, color, rot) {
   ctx.rotate(rot);
   ctx.fillStyle = `rgba(${color[0]},${color[1]},${color[2]},${opacity})`;
   ctx.fillRect(-size * 0.7, -size * 0.4, size * 1.4, size * 0.8);
-  // window dots
   ctx.fillStyle = `rgba(${color[0]},${color[1]},${color[2]},${opacity * 0.5})`;
   for (let wx = -size * 0.4; wx < size * 0.5; wx += size * 0.35) {
     for (let wy = -size * 0.15; wy < size * 0.25; wy += size * 0.25) {
@@ -1239,14 +1241,12 @@ function drawStar(x, y, size, opacity, color, rot) {
   ctx.fillStyle = `rgba(${color[0]},${color[1]},${color[2]},${opacity})`;
   ctx.fill();
   ctx.restore();
-  // sparkle
   ctx.beginPath();
   ctx.arc(x, y, size * 0.3, 0, Math.PI * 2);
   ctx.fillStyle = `rgba(${color[0]},${color[1]},${color[2]},${opacity * 0.4})`;
   ctx.fill();
 }
 
-// Connections between close particles
 function drawConnections(particles, color, alpha) {
   for (let i = 0; i < particles.length; i++) {
     for (let j = i + 1; j < particles.length; j++) {
@@ -1278,7 +1278,6 @@ function animate() {
   t += 1;
   const progress = getScrollProgress();
 
-  // Determine which two scenes to blend and blend factor
   let sceneA, sceneB, blend;
   if (progress < 0.4) {
     sceneA = 0; sceneB = 1; blend = progress / 0.4;
@@ -1288,7 +1287,6 @@ function animate() {
     sceneA = 2; sceneB = 2; blend = 1;
   }
 
-  // Update scene indicator
   const newScene = progress < 0.3 ? 0 : progress < 0.65 ? 1 : 2;
   if (newScene !== currentScene) {
     currentScene = newScene;
@@ -1296,7 +1294,6 @@ function animate() {
     document.querySelectorAll('.scene-label-pill').forEach((p, i) => p.classList.toggle('active', i === newScene));
   }
 
-  // BG tint
   const bgA = scenes[sceneA].bgTint;
   const bgB = scenes[sceneB].bgTint;
   const r = Math.round(bgA[0] + (bgB[0] - bgA[0]) * blend);
@@ -1305,7 +1302,6 @@ function animate() {
   ctx.fillStyle = `rgb(${r},${g},${b})`;
   ctx.fillRect(0, 0, W, H);
 
-  // Draw scene A particles
   const alphaA = 1 - blend;
   if (alphaA > 0.01) {
     const sA = scenes[sceneA];
@@ -1327,7 +1323,6 @@ function animate() {
     });
   }
 
-  // Draw scene B particles
   if (blend > 0.01) {
     const sB = scenes[sceneB];
     const pB = particleSets[sceneB];
@@ -1364,7 +1359,6 @@ function togglePhase(el) {
   document.querySelectorAll('.phase-card.open').forEach(c => c.classList.remove('open'));
   if (!wasOpen) el.classList.add('open');
 
-  // Update the number display
   const numEl = el.querySelector('.phase-num');
   if (!wasOpen) {
     const idx = Array.from(el.parentNode.querySelectorAll('.phase-card')).indexOf(el);
